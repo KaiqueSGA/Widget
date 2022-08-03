@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script type="text/javascript" src="https://admin.tago.io/dist/custom-widget.min.js"></script>
+    <title>Test Widget</title>
+
+    <style type="text/css">
+        .button {background-color: aqua;}  /* Green */ 
+    </style>
+
+
+</head>
+<body>
+
+     <input type="text" placeholder="Digite o nome do dispositivo aqui" />
+
+     <button class="button"; onclick="sendData()">
+          Send Data
+    </button>
+
+    
+   
+    <script>
+      
+        
+        function sendData(){
+
+            var data = {
+                variable:"test_variable",
+                value:Math.random()
+            };
+            
+            window.TagoIO.sendData(data);
+        }
+           
+            window.TagoIO.onStart((widget) => {
+                console.log('oi')
+            window.widget = widget;
+
+        })
+
+        window.TagoIO.ready();
+    
+    </script>
+</html>
+
