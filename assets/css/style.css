@@ -32,7 +32,7 @@
     }
     
 .close {
-    margin-top: 0.5em;
+    margin-top: 0.4em;
     width:40px;
     height:17px;
     color:white;
@@ -45,13 +45,13 @@
     display:flex;
     justify-content: space-between;
     background-color:rgb(28, 51, 90) ;
-    height: 1.99em;
+    height: 2.1em;
     border-top-left-radius: 3.1px;
     border-top-right-radius: 3.1px;
 }
 
 .title{
-    margin-top: 0.5em;
+    margin-top: 0.3em;
     margin-left: 0.5em;
     align-items: center;
     color:white;
@@ -67,10 +67,70 @@
 
 .label_dev{
 height: 1em;
-width:5em;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 14px;
+width:18em;
+margin-left: 1.3em;
+margin-top: 0.4em;
+margin-bottom: 0.7em;
+display:flex;
+justify-content: center;
 }
 
-input{
-    width:60em;
-    text-align: center;
+
+.drop{
+width: 1.2em;
+height: 1.45em;
+}
+
+
+.title_label{
+margin-left: 0.3em;
+}
+
+
+.input{
+    display:flex;
+}
+
+.buttons{
+    display:flex;
+    padding-right: 1em;
+}
+
+.buttons button{
+  width:3em;
+  text-align: right;
+  align-items: right;
+  height: auto;
+  border:none; 
+  background-color:#f3f3f4;
+}
+
+.blankSpace{
+    border: 1px solid #e5e6e7;
+    border-radius: 3px;
+    height: 6em;
+    margin-left:1.3em;
+    width:52em;
+}
+
+.refresh img{
+    width:17px;
+    height:17px;
+}
+
+.refresh button{
+ padding-right:0.2em
+}
+
+.listButton img {
+    width:22px;
+    height:22px;
+}
+
+.listButton button{
+    border-left: 1px solid black;
+    padding-left: 1em;
+    padding-right: 1.5em;
 }
