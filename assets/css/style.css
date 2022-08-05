@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: border-box;
+    border:none;
+ 
 }
 
 .button {
@@ -26,7 +27,7 @@
     border-radius: 5px;
     display:flex;
     flex-direction: column;
-    background-color:#f3f3f4;
+    background-color:white;
     width:880.5px;
     height:360px
     }
@@ -89,9 +90,10 @@ margin-left: 0.3em;
 }
 
 
-.input{
+ .input{
     display:flex;
-}
+    height: 13em;
+} 
 
 .buttons{
     display:flex;
@@ -100,10 +102,6 @@ margin-left: 0.3em;
 
 .buttons button{
   width:3em;
-  text-align: right;
-  align-items: right;
-  height: auto;
-    border:none; 
   background-color:#f3f3f4;
 }
 
@@ -122,6 +120,7 @@ margin-left: 0.3em;
 
 .refresh button{
  padding-right: 0.2em;
+ border:none;
 }
 
 .listButton img {
@@ -129,8 +128,20 @@ margin-left: 0.3em;
     height:22px;
 }
 
-.listButton button{
-    border-left: 1px solid black;
-    padding-left: 1em;
+
+.listButton{
+    border-left: 1px solid #e5e6e7;
+    padding-left: 0.7em;
     padding-right: 1.5em;
+}
+
+
+.secondInput{
+    display:flex;
+    flex-direction: column;
+}
+
+.inputCmd{
+    width: 20em;
+    height:auto;
 }
