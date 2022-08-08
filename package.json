@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@tago-io/sdk": "^10.9.4"
+  }
+}
