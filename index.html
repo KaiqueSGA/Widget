@@ -254,17 +254,20 @@
                     
                     
                      <script>
+
+                        const { Analysis, Account, Utils, Device } = require('@tago-io/sdk');
+                        const account_token = "a394b4c9-7ea7-4346-bbe1-ddb35f9bc948";
+
                         
                         window.TagoIO.ready();
 
                             function sendData(){
-                    
-                                var data = {
-                                    variable:"test_variable",
-                                    value:Math.random()
-                                };
-                                
-                                window.TagoIO.sendData(data);
+                                    var data = {
+                                        variable:"test_variable",
+                                        value:Math.random()
+                                    };
+                                    
+                                    window.TagoIO.sendData(data);
                             }
                                 
                                 window.TagoIO.onStart((widget) => {
@@ -272,6 +275,8 @@
                                 window.widget = widget;
                     
                             })
+
+                           
                     
                            
                     
