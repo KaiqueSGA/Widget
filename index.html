@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script type="text/javascript" src="https://admin.tago.io/dist/custom-widget.min.js"></script>
+<!--     <script type="text/script"src="./node_modules/@tago-io/sdk/src/modules/"></script> -->    
     <title>Test Widget</title>
 
 <style>
@@ -252,17 +253,19 @@
                     
                     
                      <script>
-
-                    
                         async function listdevices(){
-                           const { Analysis, Account, Utils, Device } = require('@tago-io/sdk');
+                            //const { Account } = require('@tago-io/sdk')
+                            console.log(window.TagoIO)
+
+                            console.log(window.TagoIO.devices)
+                            
                             const account_token = "a394b4c9-7ea7-4346-bbe1-ddb35f9bc948";
 
                             const account = new Account({token: account_token})
 
-                            let search = await account.devices.list(); 
+                            let search = await account.devices.list();  
                             
-                            console.log('oi')
+                            
                         }
                         
                         
