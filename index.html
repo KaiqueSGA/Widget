@@ -237,7 +237,7 @@
 
 
                     <div class="rodape">
-                        <button class="button"; onclick="sendData()">
+                        <button class="button"; onclick="listdevices()">
                             Enviar CMD
                         </button>
                     </div>
@@ -248,16 +248,24 @@
 
                
 
-                        
-                
                     
                     
                     
                      <script>
 
-                        const { Analysis, Account, Utils, Device } = require('@tago-io/sdk');
-                        const account_token = "a394b4c9-7ea7-4346-bbe1-ddb35f9bc948";
+                    
+                        async function listdevices(){
+                           const { Analysis, Account, Utils, Device } = require('@tago-io/sdk');
+                            const account_token = "a394b4c9-7ea7-4346-bbe1-ddb35f9bc948";
 
+                            const account = new Account({token: account_token})
+
+                            let search = await account.devices.list(); 
+                            
+                            console.log('oi')
+                        }
+                        
+                        
                         
                         window.TagoIO.ready();
 
